@@ -22,13 +22,14 @@ public class Demo {
       //  System.out.println(Arrays.toString(students));     // output -- [null, null, null, null, null] , when students are not initialized.
 
         Student sneha = new Student();
-        sneha.name = "sneha rawat";
-        sneha.rno = 12345;
-        sneha.marks = 98.98f;
-
-        System.out.println(sneha.rno);    // 0
-        System.out.println(sneha.name);   // null
-        System.out.println(sneha.marks);  // 0.0
+//        sneha.name = "sneha rawat";
+//        sneha.rno = 12345;
+//        sneha.marks = 98.98f;
+        sneha.changeName("shoe lover");
+        sneha.greeting();
+//        System.out.println(sneha.rno);    // 0
+//        System.out.println(sneha.name);   // null
+//        System.out.println(sneha.marks);  // 0.0
     }
 }
 // create a class
@@ -38,4 +39,21 @@ class Student{
     int rno ;
     String name;
     float marks ;
+
+    void greeting(){
+        System.out.println("hello! My name is " + this.name);
+    }
+
+    void changeName(String newName){
+       name = newName;
+    }
+
+
+    // we need a way to add values of the above properties object by object
+    // we need one word to access every object  ----->>>>    "this" keyword
+    Student () {
+        this.name = "sneha rawat";    // this does the work of line 25,26,27 internally
+        this.rno = 12345;
+        this.marks = 98.98f;
+    }
 }
