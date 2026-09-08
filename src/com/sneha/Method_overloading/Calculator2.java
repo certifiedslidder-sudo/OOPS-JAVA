@@ -12,7 +12,7 @@ public class Calculator2
     {
         return a+b+c;
     }
-    double add(double a,double b)
+    double add(double b,double a)
     {
         return a+b;
     }
