@@ -6,9 +6,9 @@ public class BankAccount {
     private char type;
     private double balance;
 
-    void initialize(Scanner sc )
+   // void initialize(Scanner sc )
     {
         System.out.println("depositor name: ");
-        name = sc.nextLine();
+      //  name = sc.nextLine();
     }
 }
