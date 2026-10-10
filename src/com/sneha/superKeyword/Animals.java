@@ -1,5 +1,5 @@
-package com.sneha.Super;
-
+package com.sneha.superKeyword;
+// for accessing method from parent class
 public class Animals {
     void eat(){
         System.out.println("eating");
@@ -13,8 +13,8 @@ class Dogs extends Animals{
         System.out.println("barking");
     }
     void sleep(){
-        super.eat();
-        bark();
+        super.eat();             // eating
+        bark();                  // barking
     }
 }
 class Test{

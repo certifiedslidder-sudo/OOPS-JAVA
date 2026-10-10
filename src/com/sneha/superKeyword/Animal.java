@@ -1,4 +1,4 @@
-package com.sneha;
+package com.sneha.superKeyword;
 
 public class Animal {
     String color = "white";
